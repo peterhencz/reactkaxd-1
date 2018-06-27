@@ -54,6 +54,17 @@ export default {
         use: ['babel-loader'],
       },
       {
+        test: /\.(jpe?g|png|gif|ico)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
         test: /(\.css|\.scss|\.sass)$/,
         use: [
           'style-loader',
