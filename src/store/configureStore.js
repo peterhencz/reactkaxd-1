@@ -2,6 +2,7 @@ import 'babel-polyfill';
 import { createStore, compose, applyMiddleware } from 'redux';
 import createHistory from 'history/createBrowserHistory';
 import { routerMiddleware } from 'react-router-redux';
+import rootReducer from 'reducers';
 
 export const history = createHistory();
 
@@ -14,6 +15,7 @@ function configureDevStore(initialState) {
 
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // add support for Redux dev tools
   const store = createStore(
+    rootReducer,
     initialState,
     composeEnhancers(
       applyMiddleware(...middlewares),

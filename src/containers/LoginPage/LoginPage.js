@@ -7,10 +7,12 @@ class LoginPage extends Component {
   }
 
   render() {
-    <div className="page page-login">
-      <h1>Login</h1>
-      <button>Login</button>
-    </div>
+    return(
+      <div className="page page-login">
+        <h1>Login</h1>
+        <button>Login</button>
+      </div>
+    );
   }
 }
 
