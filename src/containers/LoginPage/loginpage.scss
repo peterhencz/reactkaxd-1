@@ -1,0 +1,39 @@
+.page-login {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  .inputs {
+    width: 10em;
+  }
+  input, 
+  button { 
+    font-size: 1em;
+    border: none;
+    outline: none;
+    background: transparent;
+  } 
+  input {
+    margin: 1em 0;
+    border-bottom: 4px solid white;
+  }
+
+  input:focus {
+    background: #e8ebf2;
+    border-bottom: 4px solid tomato;
+    transform: scale(1.2);
+    transition-duration: .4s;
+  }
+
+  button {
+    margin: 1em 0;
+    border-radius: 50%;
+    font-size: 3em;
+  }
+
+  button:hover {
+    transform: rotateY(180deg);
+    transition: .2s ease-in-out;
+  }
+}

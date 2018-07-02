@@ -1,5 +1,12 @@
 @import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 body {
+  color: white;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  place-items: center center;
   background-color: $APP_BG;
+  font-family: 'Open Sans', sans-serif;
 }
